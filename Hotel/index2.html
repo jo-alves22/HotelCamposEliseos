@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <link rel="stylesheet" href="css/style.css">
+        <script src="hotel.js"></script>
+
+        <title>Instalações</title>
+        <link rel="shortcut icon" href="https://www.pngix.com/pngfile/middle/76-769988_hotel-signal-in-rounded-square-comments-icone-hotel.png" >
+    </head>
+
+    <body onload="texto();">
+        <header>
+            <a href="#" class="logo">Hotel Campos Elísios</a>
+    
+            <div class="menuToggle" onclick="toggleMenu();"></div>
+    
+            <ul class="navBar">
+                <li><a href="index.html" onclick="toggleMenu();">Home</a></li>
+                <li><a href="contato.html" onclick="toggleMenu();">Contato</a></li>
+            </ul>
+        </header>
+
+
+        <main>
+            <article class="instalacao" id="instalacao">
+                <section class="titulo">
+                    <h2 class="tituloTexto">Nossas <span>I</span>nstalações</h2>
+                    <p>
+                        Seja para lazer ou negócios, nós atendemos suas expectativas.
+                    </p>
+                </section>
+    
+                <section class="conteudo">
+                    <div class="box">
+                        <figure>
+                            <img src="imagens/salao.jpg" alt="São de Festas">
+                        </figure>
+                        <div class="text">
+                            <h3>Salão de Festas</h3>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <figure>
+                            <img src="imagens/piscina.jpg" alt="piscina">
+                        </figure>
+                        <div class="text">
+                            <h3>Piscina Aquecidas</h3>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <figure>
+                            <img src="imagens/jardim.jpg" alt="jardim">
+                        </figure>
+                        <div class="text">
+                            <h3>Jardim</h3>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <figure>
+                            <img src="imagens/reuniao.jpg" alt="Sala de reuniao">
+                        </figure>
+                        <div class="text">
+                            <h3>Sala de Reunião</h3>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <footer class="copyright">
+            <p>Copyright 2021 - Estudos javascript - Fatec &copy;</p>
+        </footer>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
+    </body>
+</html>

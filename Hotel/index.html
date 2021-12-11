@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <link rel="stylesheet" href="css/style.css">
+        <script src="hotel.js"></script>
+
+        <title>Hotel Campos Elísios</title>
+        <link rel="shortcut icon" href="https://www.pngix.com/pngfile/middle/76-769988_hotel-signal-in-rounded-square-comments-icone-hotel.png" >
+    </head>
+
+<body onload="texto();">
+    <header>
+        <a href="#" class="logo">Hotel Campos Elísios</a>
+
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+
+        <ul class="navBar">
+            <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#hotel" onclick="toggleMenu();">O-Hotel</a></li>
+            <li><a href="#servicos" onclick="toggleMenu();">Serviços</a></li>
+            <li><a href="index2.html" onclick="toggleMenu();">Instalações</a></li>
+            <li><a href="#frequente" onclick="toggleMenu();">Frequentadores</a></li>
+            <li><a href="contato.html" onclick="toggleMenu();">Contato</a></li>
+        </ul>
+    </header>
+   
+    <main>
+        <article class="banner" id="banner" >
+            <section class="conteudo">
+                <h2 id="log"></h2>
+                <a href="contato.html" class="btn" >HOSPEDE-SE AGORA</a>
+            </section>
+        </article>
+
+        <article class="hotel" id="hotel">
+            <section class="conteudo-hotel">
+                <div class="coluna">
+                    <h2 class="tituloTexto"><span>C</span>ampos Elísios</h2>
+                    <p>
+                        O Hotel foi construído no local onde se localizava a mansão da tradicional família Di Stefano. 
+                        O patriarca, Giorgio Di Stefano, após imigração com a família para o Brasil no início do século 19, 
+                        conseguiu sua terra para plantar café e decidiu também utilizar sua propriedade como um local de 
+                        segurança para acolher escravos e pessoas sem condições de se sustentarem. 
+                    </p><br>
+                    <p>
+                        A família ficou conhecida por sua benevolência e caridade em toda a região, sendo capaz de ajudar 
+                        pessoas durante várias décadas até a venda da propriedade em meados do século XX.
+                    </p><br>
+                    <p>
+                        Após várias gerações da família Di Stefano, para reconhecer seu legado, nada melhor que adaptar 
+                        o local e transforma-lo em um espaço de ambiente acolhedor, paz e descanso chamando-o de 
+                        Hotel Campos Elísios.
+                    </p>
+                </div>
+
+                <aside class="coluna" >
+                    <figure>
+                        <img id="zoom" src="imagens/hotel-interno.jpg" alt="hotel interno sala"  onmouseover="zoom();">
+                    </figure>
+                </aside>
+            </section>
+        </article>
+
+        <!-- Serviços -->
+        <article class="servicos" id="servicos">
+            <section class="titulo">
+                <h2 class="tituloTexto"><span>S</span>erviços Campos Elísios</h2>
+                <p>
+                    Requinte para todos os momentos.
+                </p>
+            </section>
+
+            <section class="conteudo">
+                <div class="box" id="subir" onmouseover="subirElemento();">
+                    <figure>
+                        <img src="imagens/atendimento.jpg" alt="Atendimento">
+                    </figure>
+                    <div class="text">
+                        <h3>Recepção Especial</h3>
+                    </div>
+                </div>
+
+                <div class="box" id="subir2" onmouseover="subirElemento2();">
+                    <figure>
+                        <img src="imagens/cozinha.jpg" alt="Restaurante">
+                    </figure>
+                    <div class="text">
+                        <h3>Restaurante</h3>
+                    </div>
+                </div>
+
+                <div class="box" id="subir3" onmouseover="subirElemento3();">
+                    <figure>
+                        <img src="imagens/servico-quarto.jpg" alt="Serviços">
+                    </figure>
+                    <div class="text">
+                        <h3>Serviços de Quarto</h3>
+                    </div>
+                </div>
+
+                <div class="box" id="subir4" onmouseover="subirElemento4();">
+                    <figure>
+                        <img src="imagens/servicos-atendimento.jpg" alt="Atendimento">
+                    </figure>
+                    <div class="text">
+                        <h3>Atendimento ao Hospede</h3>
+                    </div>
+                </div>
+
+                <div class="box" id="subir5" onmouseover="subirElemento5();">
+                    <figure>
+                        <img src="imagens/café.jpg" alt="cafe">
+                    </figure>
+                    <div class="text">
+                        <h3>Café Saudável</h3>
+                    </div>
+                </div>
+
+                <div class="box" id="subir6" onmouseover="subirElemento6();">
+                    <figure>
+                        <img src="imagens/lavabo.jpg" alt="lavabo">
+                    </figure>
+                    <div class="text">
+                        <h3>Muito Mais Conforto</h3>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <article class="frequente" id="frequente">
+            <section class="titulo white">
+                <h2 class="tituloTexto"><span>D</span>epoimentos.</h2>
+                <p>
+                    Alguns relatos de experiências em nossos espaços.
+                </p>
+            </section>
+
+            <section class="conteudo">
+                <div class="box">
+                    <figure>
+                        <img src="imagens/jonas.jpeg" alt="Foto">
+                    </figure>
+                    <div class="text">
+                        <p>
+                            Estava extremamente esgotado da correria do dia a dia e uma semana no Hotel renovaram minhas energias.
+                        </p>
+                        <h3>Jonas</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <figure>
+                        <img src="imagens/zeca.png" alt="Foto">
+                    </figure>
+                    <div class="text">
+                        <p>
+                            A estrutura e o espaço disponibilizado pelo Hotel para nosso evento corporativo estava impecável.
+                        </p>
+                        <h3>José Carlos</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <figure>
+                        <img src="imagens/fotomenina.jpg" alt="">
+                    </figure>
+                    <div class="text">
+                        <p>
+                            O hotel tinha tudo que eu precisava para obter inspiração e começar a escrever meu novo livro.
+                        </p>
+                        <h3>Melinda</h3>
+                    </div>
+                </div>
+            </section>
+        </article>        
+    </main>
+
+    <footer class="copyright">
+        <p>Copyright 2021 - Estudos javascript - Fatec &copy;</p>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>

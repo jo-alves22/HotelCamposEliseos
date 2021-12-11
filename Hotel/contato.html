@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css/style.css">
+        <script src="hotel.js"></script>
+        
+        <title>Contato</title>
+        <link rel="shortcut icon" href="https://www.pngix.com/pngfile/middle/76-769988_hotel-signal-in-rounded-square-comments-icone-hotel.png" >
+    </head>
+
+    <body onload="texto();">
+        <header>
+            <a href="#" class="logo">Hotel Campos Elísios</a>
+    
+            <div class="menuToggle" onclick="toggleMenu();"></div>
+    
+            <ul class="navBar">
+                <li><a href="index.html" onclick="toggleMenu();">Home</a></li>
+                <li><a href="index2.html" onclick="toggleMenu();">Instalações</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <article class="contato" id="contato">
+                <section class="titulo">
+                    <h2 class="tituloTexto"><span>C</span>ontato e Reservas</h2>
+                    <p>
+                        Preencha o formulário abaixo e agende sua estadia conosco.
+                    </p>
+                </section>
+    
+                <section class="contatoForm"> 
+                    <h3>Envie uma Mensagem e faça seu agendamento</h3>
+    
+                    <form>
+                        <input type="text" placeholder="Nome Completo" required style="margin-bottom: 20px;">
+                        <div id="form">
+                            <div class="inputBox" action="#">
+                                <input id="email" type="email" name="email" placeholder="E-mail" onkeydown="validar();" required>
+                                <span id="text"></span>
+                            </div>
+                        </div>
+                        <input type="tel" name="telefone" placeholder="Telefone" required style="margin-top: 20px;">
+                        <p>Data de Entrada: </p>
+                        <input type="date" required>
+                        <p>Data de Saída: </p>
+                        <input type="date" required style="margin-bottom: 20px;">
+                        <label>N° de adultos</label>
+                        <input type="number" placeholder="0" style="width: 50px;">&nbsp;
+                        <label>N° de crianças</label>
+                        <input type="number" placeholder="0" style="width: 50px; margin-bottom: 20px;"><br>
+                        <textarea placeholder="Mensagem"></textarea>
+                        <input type="submit" value="Solicitar Reserva">&nbsp;
+                        <input type="reset" value="Limpar">
+                    </form>
+                </section>
+    
+                <section class="endereco">
+                    <h3>Endereço</h3>
+                    <p>Avenida da Cidade,Araras - São Paulo, 55060</p>
+                    <p>Telefone: 99999 - 0001</p>
+                    <p>E-mail: contato@hotelcamposelisios.com.br</p>
+                </section>
+            </article>
+        </main>
+
+        <footer class="copyright">
+            <p>Copyright 2021 - Estudos javascript - Fatec &copy;</p>
+        </footer>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </body>
+</html>

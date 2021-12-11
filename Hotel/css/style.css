@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;   /*faz a troca de pagina de modo suave*/
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+/*  FORMAATAÇÃO BANNER - IMAGEM DE FUNDO - HOTEL    */
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../imagens/hotel.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .conteudo{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .conteudo h2{
+    font-size: 5em;
+    color: #fff;
+}
+.banner .conteudo p{
+    font-size: 1em;
+    color: #fff;
+}
+/* Botão do banner */
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-radius: 2px;
+}
+.btn:hover{
+    letter-spacing: 6px;
+}
+
+/* FORMATAÇÃO NAVBAR LINKS */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    
+}
+header.stick{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0, 0.05);
+}
+header .logo{
+    color: brown;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.stick .logo{
+    color: #111;
+}
+
+header .navBar{
+    position: relative;
+    display: flex;
+}
+header .navBar li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navBar li a{
+    text-decoration: none;
+    color: brown;
+    font-weight: 700;
+}
+
+header.stick .navBar li a{
+    color: #111;
+}
+header .navBar li a:hover{
+    color: #ff0157;
+}
+
+article{
+    padding: 80px;
+}
+
+/* Formatação O Hotel */
+.conteudo-hotel{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}.conteudo-hotel .coluna{
+    position: relative;
+    width: 48%;
+}
+.tituloTexto{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.tituloTexto span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.conteudo-hotel .coluna figure{
+    position: relative;
+    width: 100%;
+    /* min-height: 300px; */
+    height: 100%;
+} 
+.conteudo-hotel .coluna figure img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Formatação Serviços  */
+.titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.servicos .conteudo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.servicos .conteudo .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 30px rgba(0,0,0, 0.5);
+}
+.servicos .conteudo .box figure{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.servicos .conteudo .box figure img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.servicos .conteudo .box .text{
+    padding: 15px 0 5px;
+}
+.servicos .conteudo .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+
+/* Formataçãa Instalações */
+.instalacao .conteudo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.instalacao .conteudo .box{
+    width: 250px;
+    margin: 15px;
+}
+.instalacao .conteudo .box figure{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.instalacao .conteudo .box figure img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.instalacao .conteudo .box .text{
+    padding: 15px 0 5px;
+}
+.instalacao .conteudo .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+
+/* Formatação Frequentadores */
+.frequente{
+    background: url('../imagens/lobby.jpg');
+    background-size: cover;
+}
+.white .tituloTexto, .white p{
+    color: #fff;
+}
+.frequente .conteudo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.frequente .conteudo .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.frequente .conteudo .box figure{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.frequente .conteudo .box figure img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.frequente .conteudo .box .text{
+    text-align: center;
+}
+.frequente .conteudo .box .text p{
+    color: #666;
+    font-style: italic;
+}
+.frequente .conteudo .box .text h3{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: #ff0157;
+}
+
+
+
+/* Formatação Contato */
+
+.contatoForm{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0, 0.3);
+    max-width: 100%;
+    margin-top: 30px;
+}
+.contatoForm h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contatoForm form{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.contatoForm form input, .contatoForm form textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.contatoForm form input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 200px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.contatoForm form input[type="reset"]{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 200px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.endereco{
+    margin-top: 40px;
+}
+.endereco h3, p{
+    color: #111;
+}
+/* Formatação footer */
+footer{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0, 0.1);
+    text-align: center;
+    background: #111;
+}
+footer p{
+    color: #fff;
+}
+
+/* Formatação validação email */
+
+#form{
+    position: relative;
+}
+
+#text{
+    display: block;
+    color: #000;
+    font-weight: 300;
+    font-style: italic;
+  
+}
+#form.invalid .inputBox::before{
+    position: absolute;
+    content: '';
+    right: 12px;
+    top: 12px;
+    width: 24px;
+    height: 24px;
+    background: url('../imagens/invalid.png');
+    background-size: cover;
+    z-index: 100;
+}
+#form.valid .inputBox::before{
+    position: absolute;
+    content: '';
+    right: 12px;
+    top: 12px;
+    width: 24px;
+    height: 24px;
+    background: url('../imagens/valid.png');
+    background-size: cover;
+    z-index: 100;
+}
+
+
+
+/* Responsivo */
+@media (max-width: 991px){
+    header, header.stick{
+        padding: 10px 20px;
+        /* background: rgba(212, 190, 190, 0.6); */
+    }
+    header .navBar{
+        display: none;
+    }
+
+    header .navBar.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    header .navBar li{
+        margin-left: 0;
+    }
+    header .navBar li a{
+        color: #111;
+        font-size: 1.6em;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url('../imagens/menu.png');
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .menuToggle.active{
+        background: url('../imagens/close.png');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.3s;
+    }
+    
+    header .menuToggle{
+        filter: invert(1);
+    }
+    header.stick .menuToggle{
+        filter: invert(1);
+    }
+
+    article{
+        padding: 75px 20px;
+    }
+    .banner .conteudo h2{
+        font-size: 3em;
+        color: #fff;
+    }
+
+    .conteudo-hotel{
+        flex-direction: column;
+    }
+    .conteudo-hotel .coluna{
+        position: relative;
+        width: 100%;
+    }
+    .conteudo-hotel .coluna figure{
+        height: 300px;
+        margin-top: 15px;
+    }
+
+    .servicos .conteudo{
+        margin-top: 15px;
+    }
+    .servicos .conteudo .box{
+        margin: 10px;
+    }
+    .servicos .conteudo .box figure{
+        height: 260px;
+    }
+    .titulo{
+        text-align: center;
+    }
+    .tituloTexto{
+        font-size: 1.7em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+
+    .frequente .conteudo .box{
+        margin: 10px;
+        padding: 20px;
+    }
+    .contatoForm{
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .contatoForm input[type="reset"]{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px){
+    .banner .conteudo h2{
+        font-size: 2em;
+        color: #fff;
+    }
+}
